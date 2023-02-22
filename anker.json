@@ -1,0 +1,21 @@
+{
+    "title": "anker",
+    "rules": [
+        {
+            "description": "[escape] to [ac_back]",
+            "manipulators": [
+                {
+                    "from": {
+                        "consumer_key_code": "ac_back"
+                    },
+                    "to": [
+                        {
+                            "key_code": "escape"
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        }
+    ]
+}
