@@ -2,9 +2,26 @@
     "title": "melgeek",
     "rules": [
         {
+            "description": "[delete_forward] to [end]",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "delete_forward"
+                    },
+                    "to": [
+                        {
+                            "key_code": "end"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "description": "[left_command] to [left_option]",
             "manipulators": [
                 {
+                    "type": "basic",
                     "from": {
                         "key_code": "left_command"
                     },
@@ -12,8 +29,7 @@
                         {
                             "key_code": "left_option"
                         }
-                    ],
-                    "type": "basic"
+                    ]
                 }
             ]
         },
@@ -21,6 +37,7 @@
             "description": "[left_option] to [left_command]",
             "manipulators": [
                 {
+                    "type": "basic",
                     "from": {
                         "key_code": "left_option"
                     },
@@ -28,39 +45,57 @@
                         {
                             "key_code": "left_command"
                         }
-                    ],
-                    "type": "basic"
+                    ]
                 }
             ]
         },
         {
-            "description": "[shift+esc] to [~]",
+            "description": "[right_shift+esc] to [~]",
             "manipulators": [
                 {
+                    "type": "basic",
                     "from": {
                         "key_code": "escape",
                         "modifiers": {
                             "mandatory": [
-                                "right_shift",
-                                "left_shift"
-                            ],
-                            "optional": [
-                                "any"
+                                "right_shift"
                             ]
-                        },
-                        "to": [
-                            {
-                                "key_code": "escape",
-                                "modifiers": {
-                                    "mandatory": [
-                                        "left_shift",
-                                        "function"
-                                    ]
-                                }
-                            }
-                        ],
-                        "type": "basic"
-                    }
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "escape",
+                            "modifiers": [
+                                "left_shift",
+                                "fn"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "[left_shift+esc] to [~]",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "escape",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "escape",
+                            "modifiers": [
+                                "left_shift",
+                                "fn"
+                            ]
+                        }
+                    ]
                 }
             ]
         }
