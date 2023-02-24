@@ -50,7 +50,7 @@
             ]
         },
         {
-            "description": "[right_shift+esc] to [~]",
+            "description": "[shift+esc] to [~]",
             "manipulators": [
                 {
                     "type": "basic",
@@ -58,7 +58,7 @@
                         "key_code": "escape",
                         "modifiers": {
                             "mandatory": [
-                                "right_shift"
+                                "shift"
                             ]
                         }
                     },
@@ -66,32 +66,7 @@
                         {
                             "key_code": "escape",
                             "modifiers": [
-                                "left_shift",
-                                "fn"
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "description": "[left_shift+esc] to [~]",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "escape",
-                        "modifiers": {
-                            "mandatory": [
-                                "left_shift"
-                            ]
-                        }
-                    },
-                    "to": [
-                        {
-                            "key_code": "escape",
-                            "modifiers": [
-                                "left_shift",
+                                "shift",
                                 "fn"
                             ]
                         }
