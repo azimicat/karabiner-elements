@@ -1,4 +1,4 @@
 #　Karabiner Setting
 
 ## setting
-`/Users/ユーザー名/.config/karabiner/assets/complex_modifications/` 下でこのリポジトリをcloneします。
+`/Users/ユーザー名/.config/karabiner/assets/` 下でこのリポジトリをcloneします。
