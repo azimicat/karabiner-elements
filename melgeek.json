@@ -103,6 +103,44 @@
                     ]
                 }
             ]
+        },
+        {
+            "description": "'fn+[' to 'cmd+['",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "scroll_lock"
+                    },
+                    "to": [
+                        {
+                            "key_code": "open_bracket",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "'fn+]' to 'cmd+]'",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "pause"
+                    },
+                    "to": [
+                        {
+                            "key_code": "close_bracket",
+                            "modifiers": [
+                                "left_command"
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
